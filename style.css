@@ -4,3 +4,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+body{
+    max-width: 100%;
+    background-color:#163300;
+}
