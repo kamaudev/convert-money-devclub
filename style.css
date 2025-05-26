@@ -22,7 +22,7 @@ h1 {
     font-weight: 900;
     color: #9FE870;
     margin: 1% 30vw;
-   text-align: center;
+    text-align: center;
 }
 
 main {
@@ -32,4 +32,11 @@ main {
     background-color: #F4F4F4;
     margin: 0 auto;
     padding: 44px 25px 25px;
+}
+
+label {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
 }
