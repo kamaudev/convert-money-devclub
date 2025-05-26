@@ -17,12 +17,12 @@ body {
 }
 
 h1 {
-    width: 450px;
+    width: 440px;
     font-size: 40px;
     font-weight: 900;
     color: #9FE870;
     margin: 1% 30vw;
-    display: block;
+   text-align: center;
 }
 
 main {
