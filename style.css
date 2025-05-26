@@ -8,3 +8,9 @@ body{
     max-width: 100%;
     background-color:#163300;
 }
+
+.img-logo{
+    width: 40vh;
+    display: block;
+    margin: 5% auto;
+}
