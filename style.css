@@ -97,3 +97,8 @@ section {
     flex-direction: column;
     align-items: center;
 }
+.arrow-img{
+    width: auto;
+    height: 35px;
+    margin: 10px 0;
+}
