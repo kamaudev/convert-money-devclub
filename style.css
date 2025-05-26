@@ -30,4 +30,6 @@ main {
     border-radius: 20px;
     border: 1px #9FE870 solid;
     background-color: #F4F4F4;
+    margin: 0 auto;
+    padding: 44px 25px 25px;
 }
