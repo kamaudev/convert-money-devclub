@@ -103,3 +103,9 @@ section {
     height: 35px;
     margin: 10px 0;
 }
+.currency-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
