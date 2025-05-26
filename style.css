@@ -22,3 +22,9 @@ h1{
     margin: 1% 25vw;
     display: block;
 }
+main{
+    width: 350px;
+  border-radius: 20px;
+  border: 1px #9FE870 solid;
+  background-color: #F4F4F4;
+}
