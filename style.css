@@ -117,3 +117,10 @@ section {
     font-weight: 400;
     line-height: 18px;
 }
+
+.currency-value {
+    color: #555555;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+}
