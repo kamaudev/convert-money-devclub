@@ -43,7 +43,8 @@ label {
     margin-bottom: 6px;
 }
 
-select,input {
+select,
+input {
     width: 100%;
     height: 48px;
     background: white;
@@ -56,4 +57,17 @@ select,input {
     margin-bottom: 24px;
     appearance: none;
     padding-left: 18px;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    background: #9FE870;
+    border-radius: 5px;
+    color: #163300;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    cursor: pointer;
 }
