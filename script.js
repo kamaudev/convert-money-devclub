@@ -15,7 +15,10 @@ function convertValues(){
         currency: "BRL"
      }).format(inputCurrencyValues)
 
-     currencyValueConverted.innerHTML = convertedValue
+     currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+     }).format(convertedValue)
 
 
 }
