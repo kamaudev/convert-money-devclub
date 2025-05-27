@@ -152,7 +152,7 @@ function convertValues() {
                 style: "decimal",
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 8
-            }).format(inputCurrencyValues / bitcoinToday) + "BTC"
+            }).format(inputCurrencyValues / bitcoinToday) + " BTC"
         }
         if (currencySelectToConvert.value == "euro") {
             // De Euro para Bitcoin
@@ -160,7 +160,7 @@ function convertValues() {
                 style: "decimal",
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 8
-            }).format(inputCurrencyValues * (euroToday / bitcoinToday))
+            }).format(inputCurrencyValues * (euroToday / bitcoinToday))+ " BTC"
         }
         if (currencySelectToConvert.value == "libra") {
             // De Libra para Bitcoin
@@ -168,7 +168,7 @@ function convertValues() {
                 style: "decimal",
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 8
-            }).format(inputCurrencyValues * (libraToday / bitcoinToday))
+            }).format(inputCurrencyValues * (libraToday / bitcoinToday))+ " BTC"
         }
         if (currencySelectToConvert.value == "dolar") {
             // De Dólar para Bitcoin
@@ -176,7 +176,7 @@ function convertValues() {
                 style: "decimal",
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 8
-            }).format(inputCurrencyValues * (dolarToday / bitcoinToday))
+            }).format(inputCurrencyValues * (dolarToday / bitcoinToday))+ " BTC"
         }
 
     }
