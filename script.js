@@ -1,6 +1,8 @@
 //Criando constante do botão//
 
 const convertButton = document.querySelector(".convert-button")
+const currencySelectToConvert = document.querySelector(".currency-select-to-convert")
+const currencySelectConverted = document.querySelector(".currency-select-converted")
 
 //Função do botão//
 function convertValues(){
