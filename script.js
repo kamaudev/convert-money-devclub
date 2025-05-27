@@ -12,7 +12,7 @@ function convertValues() {
     const dolarToday = 5.69
     const euroToday = 6.46
     const libraToday = 7.69
-    const bitcoinToday = 0.0000016
+    const bitcoinToday = 630000 
 
     //Converter DE
     if (currencySelectToConvert.value == "real") {
@@ -43,7 +43,7 @@ function convertValues() {
         // conversão de bitcoin
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
             style: "decimal",
-            minimumFractionDigits: 8,
+            minimumFractionDigits: 2,
             maximumFractionDigits: 8
         }).format(inputCurrencyValues) + "BTC"
     }
@@ -54,29 +54,128 @@ function convertValues() {
     //Converter PARA
     if (currencySelectConverted.value == "dolar") {
         //conversão para dólar
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD"
-        }).format(inputCurrencyValues / dolarToday)
+        if (currencySelectToConvert.value == "real") {
+            // De Real para Dólar
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues / dolarToday)
+        }
+            if (currencySelectToConvert.value == "euro") {
+            // De Euro para Dólar
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(euroToday / dolarToday))
+            }
+            if (currencySelectToConvert.value == "libra") {
+            // De Libra para Dólar
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(libraToday / dolarToday))
+            }
+            if (currencySelectToConvert.value == "bitcoin") {
+            // De Bitcoin para Dólar
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(bitcoinToday / dolarToday))
+            }
     } else if (currencySelectConverted.value == "euro") {
         // conversão para euro
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+        if (currencySelectToConvert.value == "real") {
+            // De Real para Euro
+           currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValues / euroToday)
+        }
+            if (currencySelectToConvert.value == "dolar") {
+            // De Dólar para Euro
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(dolarToday / euroToday))
+            }
+            if (currencySelectToConvert.value == "libra") {
+            // De Libra para Euro
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(libraToday / euroToday))
+            }
+            if (currencySelectToConvert.value == "bitcoin") {
+            // De Bitcoin para Euro
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(bitcoinToday / euroToday))
+            }
+        
     } else if (currencySelectConverted.value == "libra") {
         // conversão para libra
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+         if (currencySelectToConvert.value == "real") {
+            // De Real para Libra
+          currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
             style: "currency",
             currency: "GBP"
         }).format(inputCurrencyValues / libraToday)
+    }
+            if (currencySelectToConvert.value == "dolar") {
+            // De Dólar para Libra
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(dolarToday / libraToday))
+            }
+            if (currencySelectToConvert.value == "euro") {
+            // De Euro para Libra
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(euroToday / libraToday))
+            }
+            if (currencySelectToConvert.value == "bitcoin") {
+            // De Bitcoin para Libra
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(bitcoinToday / libraToday))
+            }
+        
     } else if (currencySelectConverted.value == "bitcoin") {
         // conversão para bitcoin
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+         if (currencySelectToConvert.value == "real") {
+            // De Real para Bitcoin
+             currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "decimal",
             minimumFractionDigits: 8,
             maximumFractionDigits: 8
         }).format(inputCurrencyValues / bitcoinToday) + "BTC"
+        }
+            if (currencySelectToConvert.value == "euro") {
+            // De Euro para Bitcoin
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(euroToday / bitcoinToday))
+            }
+            if (currencySelectToConvert.value == "libra") {
+            // De Libra para Bitcoin
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(libraToday / bitcoinToday))
+            }
+            if (currencySelectToConvert.value == "dolar") {
+            // De Dólar para Bitcoin
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "USD"
+            }).format(inputCurrencyValues*(dolarToday / bitcoinToday))
+            }
+       
     }
 }
 //Função mudança de texto e imagem da moeda de origem 
@@ -101,6 +200,7 @@ function changeCurrencyToConvert() {
         sourceCurrencyImage.src = "./assets/img-bitcoin.png"
     }
     convertValues()
+}
     //Função de mudança de texto e imagem da moeda de destino
     function changeCurrencyConverted() {
         const destinationCurrencyName = document.querySelector(".destination-currency-name")
