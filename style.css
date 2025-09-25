@@ -100,7 +100,7 @@ section {
 
 .arrow-img {
     width: auto;
-    height: 35px;
+    height: 30px;
     margin: 10px 0;
 }
 
@@ -123,4 +123,7 @@ section {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+}
+.source-currency-img, .destination-currency-img {
+    width: 8vw;
 }
