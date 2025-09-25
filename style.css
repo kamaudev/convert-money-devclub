@@ -118,12 +118,17 @@ section {
     line-height: 18px;
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     color: #555555;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
 }
 .source-currency-img, .destination-currency-img {
-    width: 6vw;
+    width: 4vw;
+}
+@media (max-width: 768px) {
+.source-currency-img, .destination-currency-img {
+    width: 8vw;
+}
 }
