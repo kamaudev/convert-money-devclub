@@ -1,6 +1,11 @@
 <h1>💱 Convert Money</h1>
 <p>Um conversor de moedas desenvolvido como prática de JavaScript no curso <a href="https://www.devclub.com.br/">Dev Club.</a></p>
 <p>O projeto possui uma página única, com HTML, CSS e JavaScript, e permite converter entre Real, Dólar, Euro, Libra e Bitcoin, com taxas de câmbio atualizadas em tempo real através de APIs.</p>
+<h2>Sobre o Projeto</h2>
+<p>O Convert Money JS foi criado inicialmente com valores fixos para cada moeda, servindo como exercício introdutório de lógica em JavaScript.
+Com a evolução do aprendizado, o projeto foi aprimorado para consumir APIs externas, garantindo que as taxas de câmbio fossem atualizadas em tempo real.</p>
+<p>Além disso, foram aplicados conceitos fundamentais de manipulação do DOM, formatação monetária, tratamento de erros e responsividade da interface.
+Esse projeto não apenas reforça a base de JavaScript, mas também simula um caso prático de integração entre frontend e serviços externos.</p>
 <h2>Demonstração</h2>
 <h3>Versão Desktop</h3>
 <p><img src="https://github.com/kamaudev/convert-money-js/blob/master/assets/Demonstra%C3%A7%C3%A3o/Demonstra%C3%A7%C3%A3o%20Desktop.png?raw=true"></p>
